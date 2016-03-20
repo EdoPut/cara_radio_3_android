@@ -11,14 +11,12 @@
     tools:context="it.edoput.cararadio3.MainActivityFragment"
     tools:showIn="@layout/activity_main">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <ListView
             android:id="@+id/list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:dividerHeight="8dp"
+            android:divider="@android:color/transparent"/>
 
         <TextView
             android:id="@+id/empty"
@@ -28,7 +26,5 @@
             android:layout_margin="8dp"
             android:textSize="@dimen/empty_text"
             android:text="@string/empty_view_text"/>
-
-    </FrameLayout>
 
 </android.support.v4.widget.SwipeRefreshLayout>
