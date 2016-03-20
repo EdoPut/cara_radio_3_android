@@ -125,8 +125,7 @@ public class MainActivityFragment extends Fragment {
         @Override
         protected void onPostExecute(List<TextMessage> textMessages) {
             messageList = (ArrayList<TextMessage>) textMessages;
-            mAdapter = new CustomAdapter(getActivity(), messageList);
-            listView.setAdapter(mAdapter);
+            mAdapter.updateResults(messageList);
             refreshLayout.setRefreshing(false);
         }
     }
@@ -177,7 +176,13 @@ class CustomAdapter extends BaseAdapter {
         msgora.setText(message.getMsgora());
 
         return convertView;
-
+    }
+    public void updateResults (List<TextMessage> results) {
+        if (inflater == null) {
+            inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        }
+        list = results;
+        notifyDataSetChanged();
     }
 }
 
