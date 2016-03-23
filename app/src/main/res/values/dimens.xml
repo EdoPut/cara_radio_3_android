@@ -4,9 +4,8 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="empty_text">16sp</dimen>
-    <dimen name="message_text">16dp</dimen>
-    <dimen name="date_text">12dp</dimen>
-    <dimen name="time_text">12dp</dimen>
-    <dimen name="list_item_padding">4dp</dimen>
-    <dimen name="text_item_padding">8dp</dimen>
+    <dimen name="message_text">16sp</dimen>
+    <dimen name="date_text">12sp</dimen>
+    <dimen name="time_text">12sp</dimen>
+    <dimen name="text_item_padding">8sp</dimen>
 </resources>
